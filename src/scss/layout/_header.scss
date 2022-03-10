@@ -17,9 +17,9 @@
 
 .topmenu {
   display: flex;
+  position: fixed;
   &__logo {
     padding-top: 19px;
-    padding-bottom: 100px;
     padding-left: 43px;
   }
   &--img {
@@ -37,6 +37,7 @@
   color: $color-green;
   display: flex;
   justify-content: center;
+  padding-top: 215px;
   padding-bottom: 24px;
 }
 .buttondiv {
