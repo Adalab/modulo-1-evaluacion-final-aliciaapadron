@@ -1,5 +1,53 @@
-// .menu {
-//   margin-inline: 20px;
-//   background-color: black;
-//   height: 40px;
-// }
+.header {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/header.jpg);
+}
+
+.nav {
+  display: flex;
+  padding-top: 55px;
+  padding-left: 33px;
+  &__menu {
+    background-color: $color-green;
+    height: 24px;
+  }
+}
+
+.topmenu {
+  display: flex;
+  &__logo {
+    padding-top: 19px;
+    padding-bottom: 100px;
+    padding-left: 43px;
+  }
+  &--img {
+    background-color: red;
+    height: 96px;
+    width: 213px;
+  }
+}
+.div {
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 24px;
+  color: $color-green;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.buttondiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__button {
+    height: 48px;
+    width: 176px;
+    background-color: $color-green;
+    color: $color-white;
+    font-size: 20px;
+  }
+}
