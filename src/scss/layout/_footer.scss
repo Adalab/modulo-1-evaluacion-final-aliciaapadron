@@ -1,0 +1,74 @@
+.footer {
+  background-color: $color-green;
+  color: $color-ligthgreen;
+  padding-top: 36px;
+  &__section--title {
+    font-size: 20px;
+    padding-top: 20px;
+    width: 208px;
+    text-decoration: none;
+    margin-left: 146px;
+    padding-bottom: 12px;
+  }
+}
+.list {
+  width: 208px;
+  height: 96px;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 146px;
+  &__item {
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+
+    &--link {
+      text-decoration: none;
+      color: $color-ligthgreen;
+    }
+  }
+}
+.contact__title {
+  font-size: 20px;
+  padding-top: 20px;
+  width: 208px;
+  text-decoration: none;
+  margin-left: 146px;
+  padding-bottom: 12px;
+}
+.contactlist {
+  list-style: none;
+  text-decoration: none;
+  margin-left: 146px;
+  display: flex;
+  flex-direction: column;
+  &__item {
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+
+    &--link {
+      font-size: 14px;
+      text-decoration: none;
+      color: $color-ligthgreen;
+    }
+  }
+}
+.navlist {
+  list-style: none;
+  display: flex;
+  margin-left: 146px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+.navlist__item--link {
+  text-decoration: none;
+  color: $color-white;
+  padding-right: 14px;
+}
+.arrow {
+  display: flex;
+  justify-content: right;
+  padding-right: 28px;
+  padding-bottom: 16px;
+}
