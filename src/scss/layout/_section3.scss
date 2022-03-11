@@ -6,6 +6,9 @@
     text-align: center;
     padding-top: 87px;
     padding-bottom: 10px;
+    @media all and (min-width: 768px) {
+      font-size: 30px;
+    }
   }
   &__div--text {
     font-size: 14px;
@@ -13,10 +16,13 @@
     padding: 0 27px 30px;
   }
   &__divimg {
-    height: 100vh;
+    height: 304px;
     background-size: cover;
     background-position: center;
     background-image: url(../images/creando-espacios.jpg);
+    @media all and (min-width: 768px) {
+      height: 474px;
+    }
   }
 }
 
@@ -29,7 +35,7 @@
   &__button {
     background-color: $color-green;
     color: $color-white;
-    font-size: 20px;
+    font-size: 16px;
     height: 48px;
     width: 176px;
     border: none;
@@ -41,3 +47,13 @@
     }
   }
 }
+
+// @media all and (min-width: 1200px) {
+//   .section3 {
+//     display: flex;
+//     background-color: transparent;
+//   }
+//   .section3__divimg {
+//     width: fit-content;
+//   }
+// }
