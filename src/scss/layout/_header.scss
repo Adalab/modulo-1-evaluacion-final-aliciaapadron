@@ -3,33 +3,54 @@
   background-size: cover;
   background-position: center;
   background-image: url(../images/header.jpg);
+
+  display: flex;
+  flex-direction: column;
 }
 
 .nav {
-  display: flex;
-  padding-top: 55px;
+  position: fixed;
   padding-left: 33px;
+  padding-top: 55px;
+  @media all and (min-width: 768px) {
+    padding-left: 82px;
+    padding-top: 75px;
+  }
   &__menu {
     height: 24px;
+
+    @media all and (min-width: 1200px) {
+      display: none;
+    }
   }
 }
 
-.topmenu {
+.topmenu__logo {
+  position: absolute;
+  width: 100%;
   display: flex;
-  position: fixed;
-  &__logo {
-    padding-top: 19px;
-    padding-left: 43px;
-    &--img {
-      height: 96px;
-      width: 213px;
-    }
+  justify-content: center;
+  top: 19px;
+  @media all and (min-width: 768px) {
+    top: 39px;
+  }
+  &--img {
+    height: 96px;
+    width: 213px;
   }
 }
 
 .div {
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px) {
+    align-items: flex-start;
+    padding-top: 364px;
+    padding-left: 147px;
+  }
+  @media all and (min-width: 1200px) {
+    padding-bottom: 465px;
+  }
 }
 .title {
   font-size: 24px;
@@ -38,11 +59,18 @@
   justify-content: center;
   padding-top: 215px;
   padding-bottom: 24px;
+  @media all and (min-width: 768px) {
+    font-size: 36px;
+    width: 430px;
+  }
 }
 .button1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px) {
+    justify-content: left;
+  }
 
   &__button {
     background-color: $color-green;
@@ -51,6 +79,7 @@
     height: 48px;
     width: 176px;
     border: none;
+
     &:hover {
       background-color: $color-ligthgreen;
       color: $background-color-orange;
