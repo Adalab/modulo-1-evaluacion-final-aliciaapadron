@@ -39,15 +39,17 @@
   padding-top: 215px;
   padding-bottom: 24px;
 }
-.buttondiv {
+.button1 {
   display: flex;
   justify-content: center;
   align-items: center;
+
   &__button {
-    height: 48px;
-    width: 176px;
     background-color: $color-green;
     color: $color-white;
     font-size: 20px;
+    height: 48px;
+    width: 176px;
+    border: none;
   }
 }
