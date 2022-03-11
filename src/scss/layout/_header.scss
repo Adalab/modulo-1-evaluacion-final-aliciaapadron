@@ -20,13 +20,13 @@
   &__logo {
     padding-top: 19px;
     padding-left: 43px;
-  }
-  &--img {
-    background-color: red;
-    height: 96px;
-    width: 213px;
+    &--img {
+      height: 96px;
+      width: 213px;
+    }
   }
 }
+
 .div {
   justify-content: center;
   align-items: center;
@@ -51,5 +51,11 @@
     height: 48px;
     width: 176px;
     border: none;
+    &:hover {
+      background-color: $color-ligthgreen;
+      color: $background-color-orange;
+      text-decoration: underline;
+      transition: color ease 1s;
+    }
   }
 }

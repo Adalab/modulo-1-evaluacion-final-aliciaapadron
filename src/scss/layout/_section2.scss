@@ -1,6 +1,7 @@
 .section2 {
   background-color: $background-color-orange;
   color: $color-white;
+  padding-bottom: 51px;
   &__divimg {
     display: flex;
     align-items: center;
@@ -39,8 +40,12 @@
     height: 48px;
     width: 176px;
     border: none;
-    padding-top: 17px;
-    padding-bottom: 63px;
     text-decoration: underline;
+    &:hover {
+      background-color: $color-ligthgreen;
+      color: $background-color-orange;
+      text-decoration: underline;
+      transition: color ease 1s;
+    }
   }
 }

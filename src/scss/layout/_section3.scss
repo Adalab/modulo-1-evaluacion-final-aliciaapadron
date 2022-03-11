@@ -33,5 +33,11 @@
     height: 48px;
     width: 176px;
     border: none;
+    &:hover {
+      background-color: $color-ligthgreen;
+      color: $background-color-orange;
+      text-decoration: underline;
+      transition: color ease 1s;
+    }
   }
 }
