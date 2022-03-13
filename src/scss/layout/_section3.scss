@@ -1,6 +1,17 @@
 .section3 {
-  background-color: $background-color;
   color: $color-green;
+  @media all and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+  &__div {
+    background-color: $background-color;
+    @media all and (min-width: 1200px) {
+      width: 50vw;
+      height: 50vh;
+      justify-content: center;
+    }
+  }
   &__div--title {
     font-size: 24px;
     text-align: center;
@@ -9,11 +20,21 @@
     @media all and (min-width: 768px) {
       font-size: 30px;
     }
+    @media all and (min-width: 1200px) {
+      font-size: 36px;
+      padding: 25% 35% 0;
+      text-align: left;
+    }
   }
   &__div--text {
     font-size: 14px;
     text-align: center;
     padding: 0 27px 30px;
+    @media all and (min-width: 1200px) {
+      font-size: 16px;
+      padding: 0px 45% 0 35%;
+      text-align: left;
+    }
   }
   &__divimg {
     height: 304px;
@@ -23,6 +44,10 @@
     @media all and (min-width: 768px) {
       height: 474px;
     }
+    @media all and (min-width: 1200px) {
+      width: 50vw;
+      height: 50vh;
+    }
   }
 }
 
@@ -31,6 +56,12 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 92px;
+  @media all and (min-width: 1200px) {
+    font-size: 16px;
+    padding: 20px;
+    display: block;
+    padding-left: 35%;
+  }
 
   &__button {
     background-color: $color-green;
@@ -47,13 +78,3 @@
     }
   }
 }
-
-// @media all and (min-width: 1200px) {
-//   .section3 {
-//     display: flex;
-//     background-color: transparent;
-//   }
-//   .section3__divimg {
-//     width: fit-content;
-//   }
-// }

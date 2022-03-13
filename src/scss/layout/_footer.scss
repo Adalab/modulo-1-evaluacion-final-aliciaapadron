@@ -7,6 +7,10 @@
     display: flex;
     padding-bottom: 74px;
   }
+  @media all and (min-width: 1200px) {
+    justify-content: space-between;
+    padding: 131px 187px 280px;
+  }
   &__section {
     display: flex;
     align-items: center;
@@ -54,6 +58,10 @@
   @media all and (min-width: 768px) {
     align-items: end;
     width: 100%;
+  }
+  @media all and (min-width: 1200px) {
+    align-items: end;
+    width: 0;
   }
 }
 

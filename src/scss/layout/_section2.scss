@@ -2,6 +2,9 @@
   background-color: $background-color-orange;
   color: $color-white;
   padding-bottom: 51px;
+  @media all and (min-width: 1200px) {
+    padding-bottom: 78px;
+  }
   &__divimg {
     display: flex;
     align-items: center;

@@ -16,6 +16,10 @@
       padding-top: 63px;
       padding-bottom: 40px;
     }
+    @media all and (min-width: 1200px) {
+      padding-top: 42px;
+      padding-bottom: 66px;
+    }
   }
 
   &__container2 {
@@ -36,10 +40,10 @@
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  @media all and (min-width: 768px) {
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+
+  @media all and (min-width: 1200px) {
+    font-size: 36px;
+    padding: 0px 35%;
   }
 
   &__uppercase {
@@ -52,6 +56,9 @@
     width: 208px;
     padding-bottom: 114px;
   }
+  @media all and (min-width: 1200px) {
+    padding-bottom: 128px;
+  }
   &--img1 {
     width: 90px;
     height: 99px;
@@ -60,24 +67,36 @@
     @media all and (min-width: 768px) {
       height: 106px;
     }
+    @media all and (min-width: 1200px) {
+      width: 120px;
+      height: 120px;
+    }
   }
   &--img2 {
     width: 90px;
     height: 90px;
     margin-top: 36px;
     margin-bottom: 42px;
+    @media all and (min-width: 1200px) {
+      width: 120px;
+      height: 120px;
+    }
   }
   &--img3 {
     width: 90px;
     height: 90px;
     margin-top: 36px;
     margin-bottom: 42px;
+    @media all and (min-width: 1200px) {
+      width: 120px;
+      height: 120px;
+    }
   }
   &--text {
     font-size: 20px;
     padding-bottom: 12px;
-  }
-  &--paragraph {
-    // padding-bottom: 45px;
+    @media all and (min-width: 1200px) {
+      font-size: 24px;
+    }
   }
 }
