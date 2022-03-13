@@ -9,7 +9,7 @@
     @media all and (min-width: 1200px) {
       width: 50vw;
       height: 50vh;
-      justify-content: center;
+      padding: 10% 0;
     }
   }
   &__div--title {
@@ -22,7 +22,7 @@
     }
     @media all and (min-width: 1200px) {
       font-size: 36px;
-      padding: 25% 35% 0;
+      padding: 0 35%;
       text-align: left;
     }
   }
