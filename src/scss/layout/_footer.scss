@@ -2,53 +2,35 @@
   background-color: $color-green;
   color: $color-ligthgreen;
   padding-top: 36px;
+  padding-left: 146px;
+  @media all and (min-width: 768px) {
+    display: flex;
+    padding-bottom: 74px;
+  }
+  &__section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   &__section--title {
     font-size: 20px;
     padding-top: 20px;
     width: 208px;
     text-decoration: none;
-    margin-left: 146px;
     padding-bottom: 12px;
   }
 }
-.list {
+.listfooter {
   width: 208px;
   height: 96px;
   list-style: none;
   text-decoration: none;
-  margin-left: 146px;
   &__item {
     font-size: 14px;
     list-style: none;
     text-decoration: none;
 
     &--link {
-      text-decoration: none;
-      color: $color-ligthgreen;
-    }
-  }
-}
-.contact__title {
-  font-size: 20px;
-  padding-top: 20px;
-  width: 208px;
-  text-decoration: none;
-  margin-left: 146px;
-  padding-bottom: 12px;
-}
-.contactlist {
-  list-style: none;
-  text-decoration: none;
-  margin-left: 146px;
-  display: flex;
-  flex-direction: column;
-  &__item {
-    font-size: 14px;
-    list-style: none;
-    text-decoration: none;
-
-    &--link {
-      font-size: 14px;
       text-decoration: none;
       color: $color-ligthgreen;
     }
@@ -57,9 +39,7 @@
 .navlist {
   list-style: none;
   display: flex;
-  margin-left: 146px;
   padding-top: 20px;
-  padding-bottom: 16px;
 }
 .navlist__item--link {
   text-decoration: none;
@@ -72,8 +52,8 @@
   padding-right: 28px;
   padding-bottom: 16px;
   @media all and (min-width: 768px) {
-    padding-right: 57px;
-    padding-bottom: 89px;
+    align-items: end;
+    width: 100%;
   }
 }
 
@@ -100,14 +80,5 @@
 
   to {
     background-position: 100% 50%;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .footer {
-  }
-  .footer__div {
-    display: flex;
-    flex-direction: inline;
   }
 }

@@ -3,12 +3,32 @@
   background-color: $background-color;
   padding: 0 45px;
   display: grid;
-  // justify-content: center;
   text-align: center;
-  // justify-items: center;
+  padding-bottom: 45px;
+  @media all and (min-width: 768px) {
+    padding: 0 91px;
+  }
 
   &__container1 {
     padding-top: 41px;
+    @media all and (min-width: 768px) {
+      grid-column: 1 / span 3;
+      padding-top: 63px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__container2 {
+    @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr;
+      grid-auto-flow: row;
+      text-align: center;
+      justify-items: center;
+      grid-column: span 3;
+      width: 100%;
+    }
   }
 }
 
@@ -16,6 +36,11 @@
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  @media all and (min-width: 768px) {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
 
   &__uppercase {
     text-transform: uppercase;
@@ -23,11 +48,18 @@
 }
 
 .list__item {
+  @media all and (min-width: 768px) {
+    width: 208px;
+    padding-bottom: 114px;
+  }
   &--img1 {
     width: 90px;
     height: 99px;
     margin-top: 36px;
     margin-bottom: 42px;
+    @media all and (min-width: 768px) {
+      height: 106px;
+    }
   }
   &--img2 {
     width: 90px;
@@ -46,24 +78,6 @@
     padding-bottom: 12px;
   }
   &--paragraph {
-    padding-bottom: 45px;
+    // padding-bottom: 45px;
   }
 }
-
-// @include tablet {
-//   grid-template-columns: 1fr 1fr 1fr;
-//   grid-template-rows: auto 1fr;
-//   grid-auto-flow: row;
-//   text-align: center;
-//   justify-items: center;
-// // }
-// &__text {
-//   @include title2($darkcolor);
-//   text-align: center;
-//   width: 322px;
-//   padding-top: 45px;
-//   padding-bottom: 7px;
-//   @include tablet {
-//     grid-column: span 3;
-//     width: 100%;
-//   }
