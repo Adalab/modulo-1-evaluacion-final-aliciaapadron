@@ -1,15 +1,16 @@
 .header {
-  height: 100vh;
+  height: fit-content;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   background-image: url(../images/header.jpg);
-
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .nav {
   position: fixed;
+  z-index: 100;
   padding-left: 33px;
   padding-top: 55px;
   @media all and (min-width: 768px) {
@@ -44,9 +45,6 @@
   justify-content: center;
   align-items: center;
   @media all and (min-width: 768px) {
-    align-items: flex-start;
-    padding-top: 364px;
-    padding-left: 147px;
   }
   @media all and (min-width: 1200px) {
     padding-bottom: 465px;
@@ -61,15 +59,21 @@
   padding-bottom: 24px;
   @media all and (min-width: 768px) {
     font-size: 36px;
-    width: 430px;
+    width: 460px;
+    align-items: flex-start;
+    padding-top: 364px;
+    padding-left: 147px;
   }
 }
 .button1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 76px;
   @media all and (min-width: 768px) {
     justify-content: left;
+    padding-left: 147px;
+    padding-bottom: 286px;
   }
 
   &__button {

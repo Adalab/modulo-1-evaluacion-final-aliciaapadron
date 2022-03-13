@@ -71,6 +71,10 @@
   justify-content: right;
   padding-right: 28px;
   padding-bottom: 16px;
+  @media all and (min-width: 768px) {
+    padding-right: 57px;
+    padding-bottom: 89px;
+  }
 }
 
 .footer__section--title,
@@ -96,5 +100,14 @@
 
   to {
     background-position: 100% 50%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+  }
+  .footer__div {
+    display: flex;
+    flex-direction: inline;
   }
 }
