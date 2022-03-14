@@ -8,7 +8,6 @@
   @media all and (min-width: 768px) {
     padding: 0 91px;
   }
-
   &__container1 {
     padding-top: 41px;
     @media all and (min-width: 768px) {
@@ -21,7 +20,6 @@
       padding-bottom: 66px;
     }
   }
-
   &__container2 {
     @media all and (min-width: 768px) {
       display: grid;
@@ -35,22 +33,18 @@
     }
   }
 }
-
 .text {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-
   @media all and (min-width: 1200px) {
     font-size: 36px;
     padding: 0px 35%;
   }
-
   &__uppercase {
     text-transform: uppercase;
   }
 }
-
 .list__item {
   @media all and (min-width: 768px) {
     width: 208px;
