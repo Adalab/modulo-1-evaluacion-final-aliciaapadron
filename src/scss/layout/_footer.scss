@@ -16,7 +16,7 @@
   @media all and (min-width: 1200px) {
     padding-top: 131px;
   }
-  &__section {
+  &__nav {
     width: 105px;
     &--title {
       width: fit-content;
@@ -48,7 +48,7 @@
   }
 }
 .listfooter {
-  width: fit-content;
+  width: 130px;
   list-style: none;
   text-decoration: none;
   &__item {

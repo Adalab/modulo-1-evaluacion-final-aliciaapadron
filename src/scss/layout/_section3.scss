@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
   }
-  &__div {
+  &__article {
     background-color: $background-color;
     @media all and (min-width: 1200px) {
       width: 50vw;
@@ -14,7 +14,7 @@
       justify-content: center;
     }
   }
-  &__div--title {
+  &__article--title {
     font-size: 24px;
     text-align: center;
     padding-top: 87px;
@@ -28,7 +28,7 @@
       text-align: left;
     }
   }
-  &__div--text {
+  &__article--text {
     font-size: 14px;
     text-align: center;
     padding: 0 27px 30px;
@@ -38,7 +38,7 @@
       text-align: left;
     }
   }
-  &__divimg {
+  &__articleimg {
     height: 304px;
     background-size: cover;
     background-position: center;
